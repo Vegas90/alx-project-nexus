@@ -16,7 +16,7 @@ const TrendingMovies = () => {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const res = await axios.get(`${TMDB_BASE_URL}/trending/all/week`, {
+        const res = await axios.get(`${TMDB_BASE_URL}/movie/popular`, {
           params: { api_key: TMDB_API_KEY },
         });
         const data = res.data as { results: MovieCardProps[] };
@@ -58,7 +58,7 @@ const TrendingMovies = () => {
 
   return (
     <section className="px-4 py-6">
-      <h2 className="text-3xl font-semibold mb-4 font-mono ">Trending This Week</h2>
+      <h2 className="text-3xl font-semibold mb-4 font-mono ">Popular Movies</h2>
       {/* Add a line after trending this week */}
       <hr className="border-t border-gray-300 my-4" />
 
@@ -87,7 +87,6 @@ const TrendingMovies = () => {
                   id={movie.id}
                   title={movie.title}
                   poster_path={movie.poster_path}
-                  media_type={movie.media_type}
                   // Format release_date to show only the year
                   release_date={new Date(movie.release_date).getFullYear().toString()}
                 />
