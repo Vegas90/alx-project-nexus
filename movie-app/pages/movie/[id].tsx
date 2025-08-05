@@ -3,6 +3,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import { MovieCardDetailsProps } from "@/interfaces/index";
+import FavoriteButton from "@/components/common/FavoriteButton";
 
 const MovieDetailPage: React.FC = () => {
   const router = useRouter();
@@ -82,7 +83,7 @@ const MovieDetailPage: React.FC = () => {
   <div className="p-6 max-w-6xl mx-auto">
     <div className="flex flex-col md:flex-row gap-6">
       {/* Poster on the Left */}
-      <div className="w-2xl md:w-1/3">
+      <div className="md:w-1/3">
         <Image
           width={300}
           height={450}
@@ -124,9 +125,7 @@ const MovieDetailPage: React.FC = () => {
         </div>
         {/* a button to favourite the movie */}
         <div className="mt-6">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 hover:scale-105 transition-colors">
-            Add to Favorites
-          </button>
+          <FavoriteButton movie={movie} />
         </div>
       </div>
     </div>
