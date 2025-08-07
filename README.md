@@ -88,6 +88,8 @@ For any inquiries or feedback, please reach out via email at [amosmwoni@gmail.co
 - Add search functionality to find movies by title
 - Improve error handling for API requests
 - Optimize performance for large datasets
+- Sort the movies by genre, rating, or release date
+
 ## Known Issues
 - Some movie details may not be available due to API limitations
 - Favourites are stored in local storage, which may not sync across devices
