@@ -6,7 +6,7 @@ A responsive web application that allows userS to view trending, popular and upc
 A user will also be able to save their favourites where they can come and refer to later. The app uses the TMDB (Movie Database) API and stores favourites using the browser's local storage. 
 
 ## Live Demo
-
+https://alx-project-nexus-eta.vercel.app
 
 ## Features
  - Check trending and popular movies
@@ -79,8 +79,6 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 
 ## Contact
 For any inquiries or feedback, please reach out via email at [amosmwoni@gmail.com](mailto:amosmwoni@gmail.com)
-
-## Screenshots
 
 
 ## Future Improvements
