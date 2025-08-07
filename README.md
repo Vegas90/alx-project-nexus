@@ -1,7 +1,7 @@
 # alx-project-nexus
 
 # Movie Recommendation App - MovieGo
-A responsive web application that allows user to view trending, popular and upcoming movies, view detailed informatin about the movie. 
+A responsive web application that allows userS to view trending, popular and upcoming movies, view detailed informatiOn about the movies. 
 
 A user will also be able to save their favourites where they can come and refer to later. The app uses the TMDB (Movie Database) API and stores favourites using the browser's local storage. 
 

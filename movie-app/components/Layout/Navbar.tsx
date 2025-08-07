@@ -26,7 +26,7 @@ const Navbar = () => {
 
       {/* Center: Navigation Links */}
       {/* Gets lost on smaller screens */}
-      <ul className={`hidden md:flex gap-6 text-gray-700 font-bold text-lg font-mono ${bebasNeue.className}`}>
+      <ul className={`hidden md:flex gap-6 text-gray-700 font-bold text-lg scale-120 font-mono ${bebasNeue.className}`}>
         <li><Link href="/" className="hover:opacity-80">HOME</Link></li>
         <li><Link href="/" className="hover:opacity-80">MOVIES</Link></li>
         <li><Link href="/favourites" className="hover:opacity-80">FAVOURITES</Link></li>

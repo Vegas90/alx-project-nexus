@@ -19,7 +19,7 @@ const MovieCard = ({ id, title, poster_path,media_type, release_date }: MovieCar
           className="w-full object-cover"
         />
         <div className="p-4">
-          <h3 className="text-lg font-semibold text-gray-800 mb-1">{title}</h3>
+          <h3 className="text-lg scale-110 font-semibold text-gray-800 mb-1">{title}</h3>
           {/*display the media type if available*/}
           {media_type && (
             <p className="text-base text-gray-600 mb-0">{media_type.charAt(0).toUpperCase() + media_type.slice(1)}</p>

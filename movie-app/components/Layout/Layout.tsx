@@ -18,6 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <main className={bebas.className}>
         {children}
         </main>
+      {/* Footer should always be at the bottom of the page */}
       <Footer />
     </>
   );
